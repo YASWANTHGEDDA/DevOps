@@ -65,6 +65,36 @@ form .categorie label {
   transition: all 0.3s ease;
   background-color: blueviolet;
 }
+.button button:hover {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 300%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-position 0.5s ease, transform 0.2s ease;
+  animation: rainbow-move 2s linear infinite;
+  transform: scale(1.1);
+}
+@keyframes rainbow-move {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 .error {
   color: red;
   font-size: 0.9em;
