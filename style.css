@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bdy {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: blueviolet;
+}
+
+.form {
+  background-color: white;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.container input {
+  margin-bottom: 15px;
+  width: calc(70% - 20px);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 10px;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .categorie {
+  /* Note the class name change here to match your HTML */
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .categorie label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: blueviolet;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
