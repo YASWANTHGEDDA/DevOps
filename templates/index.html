@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bdy">
+    <form id="Register" method="POST" action="/register">
+        <div class="form">
+            <h1>Registration</h1><hr>
+            <div class="container">
+                <div><label for="full">Full Name</label>
+                    <input type="text" id="full" name="full" placeholder="Enter Your Name" required />
+                </div>
+                <div><label for="userName">Username</label>
+                    <input type="text" id="userName" name="username" placeholder="Enter your username" />
+                </div>
+                <div><label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div><label for="phn">Phone Number</label>
+                    <input type="text" id="phn" name="phone" placeholder="Enter your number" required />
+                </div>
+                <div><label for="psw">Password</label>
+                    <input type="password" id="psw" name="password" placeholder="Enter your password" required />
+                </div>
+                <div><label for="cpsw">Confirm Password</label>
+                    <input type="password" id="cpsw" name="confirm_password" placeholder="Confirm your password" required />
+                </div>
+            </div>
+            <div class="gender-details">
+                <div class="gender-title">Gender</div>
+                <div class="categorie">
+                    <div>
+                        <input type="radio" id="dt1" name="gender" value="Male">
+                        <label for="dt1">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dt2" name="gender" value="Female">
+                        <label for="dt2">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dt3" name="gender" value="Prefer Not to Say">
+                        <label for="dt3">Prefer Not to Say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
